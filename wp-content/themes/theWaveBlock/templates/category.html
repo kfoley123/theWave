@@ -1,0 +1,52 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"container"} -->
+<main class="container">
+
+    <!-- 
+      Archive Title + Term Description for the current category 
+      (You can keep using wp:query-title and wp:term-description if desired)
+    -->
+    <!-- wp:query-title {"type":"archive","className":"fw-light"} /-->
+    <!-- wp:term-description /-->
+
+    <!-- 
+      Inherited Query ensures only posts from the 
+      current category are displayed. 
+      (instead of a fixed query)
+    -->
+    <!-- wp:query {"inherit":true} -->
+    <div class="post-list">
+        <!-- wp:post-template -->
+        <article class="post">
+            <!-- wp:post-featured-image {"isLink":true,"sizeSlug":"large","className":"img-fluid w-100 post-thumbnail mb-2"} /-->
+            <!-- wp:post-title {"isLink":true,"className":"h5"} /-->
+
+            <!-- wp:group {"className":"mb-3"} -->
+            <div class="mb-3 mx-2 d-flex">
+                <!-- wp:post-author {"className":"fw-bold mx-2"} /-->
+                <!-- wp:post-date {"className":"text-muted"} /-->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:post-excerpt {"className":"post-excerpt mb-5"} /-->
+        </article>
+        <!-- /wp:post-template -->
+
+        <!-- 
+          Query Pagination block can be placed inside the 
+          query if you want it directly after the posts.
+        -->
+        <!-- wp:query-pagination {"className":"pagination text-center"} -->
+        <!-- wp:query-pagination-previous /-->
+        <!-- wp:query-pagination-next /-->
+        <!-- /wp:query-pagination -->
+
+    </div>
+    <!-- /wp:query -->
+
+    <hr class="my-4 border-top border-2 border-dark">
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

@@ -1,0 +1,68 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<div class="site-content">
+<!-- wp:query {"queryId":1,"query":{"perPage":4,"postType":"post","order":"desc","orderBy":"date"}} -->
+<div class="wp-block-query">
+	<!-- wp:post-template -->
+	<div class="wp-block-post">
+		<!-- Group for Category Section -->
+		<!-- wp:group {"className":"category-section mb-5"} -->
+		<div class="wp-block-group category-section mb-5">
+			<!-- Display Post Categories -->
+			<!-- wp:post-terms {"term":"category","separator":", ","className":"mb-3 fw-light h1"} /-->
+			
+			<!-- Row for Featured and Smaller Posts -->
+			<!-- wp:group {"className":"row"} -->
+			<div class="wp-block-group row">
+				<!-- Column for Featured Post -->
+				<!-- wp:column {"className":"col-md-8"} -->
+				<div class="wp-block-column col-md-8">
+					<!-- wp:group {"className":"featured-post mb-3"} -->
+					<div class="wp-block-group featured-post mb-3">
+						<!-- Featured Image -->
+						<!-- wp:post-featured-image {"sizeSlug":"large","className":"img-fluid mb-2"} /-->
+						<!-- wp:post-title {"isLink":true,"className":"fw-bold h4 mt-2 px-2"} /-->
+						<!-- Author Section -->
+						<!-- wp:group {"className":"d-flex"} -->
+						<div class="wp-block-group d-flex">
+							<!-- wp:post-author {"showAvatar":true,"className":"text-muted"} /-->
+						</div>
+						<!-- /wp:group -->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:column -->
+				
+				<!-- Column for next three most recent posts -->
+				<!-- wp:column {"className":"col-md-4 d-flex align-items-center"} -->
+				<div class="wp-block-column col-md-4">
+
+					<!-- wp:query {"queryId":2,"query":{"perPage":3,"postType":"post","order":"desc","orderBy":"date"}} -->
+					<div class="wp-block-query">
+						<!-- wp:post-template -->
+						<article class="wp-block-post regular-post pt-2">
+							<!-- Post Title as a Link -->
+							<!-- wp:post-title {"isLink":true,"className":"fw-bold h4"} /-->
+							<!-- Post Author -->
+							<!-- wp:post-author {"showAvatar":false,"className":"text-muted small"} /-->
+						</article>
+						<!-- /wp:post-template -->
+					</div>
+					<!-- /wp:query -->
+				</div>
+				<!-- /wp:column -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	
+	<!-- /wp:post-template -->
+</div>
+<!-- /wp:query -->
+<hr class="my-4 border-top border-2 border-dark">
+</div>
+
+
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

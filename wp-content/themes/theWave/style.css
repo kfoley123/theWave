@@ -1,0 +1,64 @@
+/*
+Theme Name: the Wave 
+Author: Kortney Foley (W0468992)
+Author URI: https://www.linkedin.com/in/kortney-foley/
+Description: Theme for assignment one, the Wave theme development
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+.bg-dark-gray {
+    background-color: #f1f1f1;
+}
+
+.post-thumbnail {
+    max-width: 1200px; 
+    height: auto; 
+    object-fit: cover;
+    display: block;
+}
+
+.post-header-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.post-header-image img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+/* overrides built in wordpress styles */
+
+article.featured-post a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.post h5 a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+h3 a {
+    text-decoration: none !important;
+    color: inherit;
+
+}
+
+.navbar-nav li {
+    margin-right: 3rem; /* Adds space between each menu item */
+}
+
+/* Remove right margin on the last item */
+.navbar-nav li:last-child {
+    margin-right: 0;
+}
+
+.post-excerpt {
+    max-width: 1200px;
+    word-wrap: break-word; /* Prevent overflow from long words */
+}

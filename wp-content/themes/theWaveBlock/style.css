@@ -1,0 +1,159 @@
+/*
+Theme Name: the Wave Block
+Author: Kortney Foley (W0468992)
+Author URI: https://www.linkedin.com/in/kortney-foley/
+Description: Theme for assignment two, the Wave block theme development
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+body {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f1f1f1 ;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.site-content {
+    /* 1) Limit how wide the main content gets */
+    max-width: 1500px; 
+    
+    /* 2) Center it horizontally on bigger screens */
+    margin: 0 auto; 
+    
+    /* 3) Keep some padding on the left & right for all screens */
+    padding: 0 2rem; /* Adjust the 2rem to your desired side spacing */
+  }
+
+.post-thumbnail {
+    max-width: 1200px; 
+    height: auto; 
+    object-fit: cover;
+    display: block;
+}
+
+
+.navbar .wp-block-navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.post-header-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.post-header-image img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+/* overrides built in wordpress styles */
+
+article.featured-post a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.post h5 a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+h3 a {
+    text-decoration: none !important;
+    color: inherit;
+
+}
+
+/* .wp-block-post-featured-image {
+    max-width: 800px;
+} */
+
+.navbar-nav li {
+    margin-right: 3rem; /* Adds space between each menu item */
+}
+
+/* Remove right margin on the last item */
+.navbar-nav li:last-child {
+    margin-right: 0;
+}
+
+.post-excerpt {
+    max-width: 1200px;
+    word-wrap: break-word; /* Prevent overflow from long words */
+}
+
+/* makes pre populated avatar round */
+.avatar {
+    width: 40px;  
+    height: 40px;
+    border-radius: 50%;  
+    object-fit: cover;  /
+}
+
+.col-md-4 .wp-block-query .wp-block-post:nth-of-type(2) {
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+/* Site title style */
+.site-title-custom {
+    font-size: 2.5rem;
+     padding-left: 6rem
+   
+  }
+  
+  /* Optional nav link styling */
+  .wp-block-navigation a {
+    margin: 0 1rem;  
+    text-transform: uppercase; 
+    font-size: 1.5rem;
+  }
+
+  .wp-block-navigation .wp-block-navigation__container {
+    display: flex;
+    flex-wrap: nowrap;  
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    /* Force the hamburger toggle to appear on the right */
+    .wp-block-navigation__responsive-container {
+      text-align: right !important;
+    }
+  
+    /* Force the opened menu items to align right as well */
+    .wp-block-navigation__responsive-container .wp-block-navigation__container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  /* On mid-size screens below 992px (Bootstrap md), make nav text smaller */
+@media (max-width: 992px) {
+    .wp-block-navigation .wp-block-navigation-item__content .wp-block-navigation-item__label {
+      font-size: 1rem;
+      padding: 0 0.5rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .site-content {
+      padding: 0 1rem; 
+    }
+  }
+
+ 

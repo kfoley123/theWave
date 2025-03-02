@@ -1,0 +1,321 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"container bg-danger"} -->
+<main class="container ">
+
+  <!-- =========================
+       CATEGORY: Arts & Music
+  ========================== -->
+
+  <!-- wp:heading {"level":2,"className":"mb-3"} -->
+  <h2 class="mb-3">Arts &amp; Music</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:group {"className":"row align-items-stretch"} -->
+  <div class="wp-block-group row align-items-stretch">
+    
+    <!-- Left Column: single post (no offset) -->
+    <!-- wp:column {"className":"col-md-8"} -->
+    <div class="wp-block-column col-md-8">
+      <!-- wp:query {
+        "queryId":"arts-and-music-featured",
+        "query":{
+          "perPage":1,
+          "postType":"post",
+          "order":"desc",
+          "orderBy":"date",
+          "taxQuery":[
+            {
+              "taxonomy":"category",
+              "field":"slug",
+              "terms":["arts-and-music"]
+            }
+          ]
+        },
+        "displayLayout":{"type":"list","columns":1},
+        "className":"mb-4"
+      } -->
+      <div class="wp-block-query mb-4">
+        <!-- wp:post-template -->
+        <article class="featured-post mb-3">
+          <!-- wp:post-featured-image {"sizeSlug":"large","className":"img-fluid mb-2"} /-->
+          <!-- wp:post-title {"isLink":true,"className":"fw-bold h4 mt-2"} /-->
+          <!-- wp:group {"className":"d-flex"} -->
+          <div class="wp-block-group d-flex">
+            <!-- wp:post-author {"showAvatar":true,"className":"text-muted"} /-->
+          </div>
+          <!-- /wp:group -->
+        </article>
+        <!-- /wp:post-template -->
+      </div>
+      <!-- /wp:query -->
+    </div>
+    <!-- /wp:column -->
+    
+    <!-- Right Column: 3 posts (no offset) -->
+    <!-- wp:column {"className":"col-md-4"} -->
+    <div class="wp-block-column col-md-4">
+      <!-- wp:query {
+        "queryId":"arts-and-music-3",
+        "query":{
+          "perPage":3,
+          "postType":"post",
+          "order":"desc",
+          "orderBy":"date",
+          "taxQuery":[
+            {
+              "taxonomy":"category",
+              "field":"slug",
+              "terms":["arts-and-music"]
+            }
+          ]
+        },
+        "displayLayout":{"type":"list","columns":1},
+        "className":"mb-5"
+      } -->
+      <div class="wp-block-query mb-5">
+        <!-- wp:post-template -->
+        <article class="regular-post pt-2">
+          <!-- wp:post-title {"isLink":true,"className":"fw-bold h5"} /-->
+          <!-- wp:post-author {"showAvatar":false,"className":"text-muted small"} /-->
+        </article>
+        <!-- /wp:post-template -->
+      </div>
+      <!-- /wp:query -->
+    </div>
+    <!-- /wp:column -->
+    
+  </div>
+  <!-- /wp:group -->
+
+  <hr class="my-4 border-top border-2 border-dark" />
+
+  <!-- =========================
+       CATEGORY: Food & Drink
+  ========================== -->
+
+  <!-- wp:heading {"level":2,"className":"mb-3"} -->
+  <h2 class="mb-3">Food &amp; Drink</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:group {"className":"row align-items-stretch"} -->
+  <div class="wp-block-group row align-items-stretch">
+    
+    <!-- Left Column: single post (no offset) -->
+    <!-- wp:column {"className":"col-md-8"} -->
+    <div class="wp-block-column col-md-8">
+      <!-- wp:query {
+        "queryId":"food-and-drink-featured",
+        "query":{
+          "perPage":1,
+          "postType":"post",
+          "order":"desc",
+          "orderBy":"date",
+          "categoryName":"food-and-drink"
+        },
+        "displayLayout":{"type":"list","columns":1},
+        "className":"mb-4"
+      } -->
+      <div class="wp-block-query mb-4">
+        <!-- wp:post-template -->
+        <article class="featured-post mb-3">
+          <!-- wp:post-featured-image {"sizeSlug":"large","className":"img-fluid mb-2"} /-->
+          <!-- wp:post-title {"isLink":true,"className":"fw-bold h4 mt-2"} /-->
+          <!-- wp:group {"className":"d-flex"} -->
+          <div class="wp-block-group d-flex">
+            <!-- wp:post-author {"showAvatar":true,"className":"text-muted"} /-->
+          </div>
+          <!-- /wp:group -->
+        </article>
+        <!-- /wp:post-template -->
+      </div>
+      <!-- /wp:query -->
+    </div>
+    <!-- /wp:column -->
+    
+    <!-- Right Column: 3 posts (no offset) -->
+    <!-- wp:column {"className":"col-md-4"} -->
+    <div class="wp-block-column col-md-4">
+      <!-- wp:query {
+        "queryId":"food-and-drink-3",
+        "query":{
+          "perPage":3,
+          "postType":"post",
+          "order":"desc",
+          "orderBy":"date",
+          "categoryName":"food-and-drink"
+        },
+        "displayLayout":{"type":"list","columns":1},
+        "className":"mb-5"
+      } -->
+      <div class="wp-block-query mb-5">
+        <!-- wp:post-template -->
+        <article class="regular-post pt-2">
+          <!-- wp:post-title {"isLink":true,"className":"fw-bold h5"} /-->
+          <!-- wp:post-author {"showAvatar":false,"className":"text-muted small"} /-->
+        </article>
+        <!-- /wp:post-template -->
+      </div>
+      <!-- /wp:query -->
+    </div>
+    <!-- /wp:column -->
+    
+  </div>
+  <!-- /wp:group -->
+
+  <hr class="my-4 border-top border-2 border-dark"/>
+
+  <!-- =========================
+       CATEGORY: OPINION
+  ========================== -->
+
+  <!-- wp:heading {"level":2,"className":"mb-3"} -->
+  <h2 class="mb-3">Opinion</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:group {"className":"row align-items-stretch"} -->
+  <div class="wp-block-group row align-items-stretch">
+    
+    <!-- Left Column: single post (no offset) -->
+    <!-- wp:column {"className":"col-md-8"} -->
+    <div class="wp-block-column col-md-8">
+      <!-- wp:query {
+        "queryId":"opinion-featured",
+        "query":{
+          "perPage":1,
+          "postType":"post",
+          "order":"desc",
+          "orderBy":"date",
+          "categoryName":"opinion"
+        },
+        "displayLayout":{"type":"list","columns":1},
+        "className":"mb-4"
+      } -->
+      <div class="wp-block-query mb-4">
+        <!-- wp:post-template -->
+        <article class="featured-post mb-3">
+          <!-- wp:post-featured-image {"sizeSlug":"large","className":"img-fluid mb-2"} /-->
+          <!-- wp:post-title {"isLink":true,"className":"fw-bold h4 mt-2"} /-->
+          <!-- wp:group {"className":"d-flex"} -->
+          <div class="wp-block-group d-flex">
+            <!-- wp:post-author {"showAvatar":true,"className":"text-muted"} /-->
+          </div>
+          <!-- /wp:group -->
+        </article>
+        <!-- /wp:post-template -->
+      </div>
+      <!-- /wp:query -->
+    </div>
+    <!-- /wp:column -->
+    
+    <!-- Right Column: 3 posts (no offset) -->
+    <!-- wp:column {"className":"col-md-4"} -->
+    <div class="wp-block-column col-md-4">
+      <!-- wp:query {
+        "queryId":"opinion-3",
+        "query":{
+          "perPage":3,
+          "postType":"post",
+          "order":"desc",
+          "orderBy":"date",
+          "categoryName":"opinion"
+        },
+        "displayLayout":{"type":"list","columns":1},
+        "className":"mb-5"
+      } -->
+      <div class="wp-block-query mb-5">
+        <!-- wp:post-template -->
+        <article class="regular-post pt-2">
+          <!-- wp:post-title {"isLink":true,"className":"fw-bold h5"} /-->
+          <!-- wp:post-author {"showAvatar":false,"className":"text-muted small"} /-->
+        </article>
+        <!-- /wp:post-template -->
+      </div>
+      <!-- /wp:query -->
+    </div>
+    <!-- /wp:column -->
+    
+  </div>
+  <!-- /wp:group -->
+
+  <hr class="my-4 border-top border-2 border-dark"/>
+
+  <!-- =========================
+       CATEGORY: EVENTS
+  ========================== -->
+
+  <!-- wp:heading {"level":2,"className":"mb-3"} -->
+  <h2 class="mb-3">Events</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:group {"className":"row align-items-stretch"} -->
+  <div class="wp-block-group row align-items-stretch">
+    
+    <!-- Left Column: single post (no offset) -->
+    <!-- wp:column {"className":"col-md-8"} -->
+    <div class="wp-block-column col-md-8">
+      <!-- wp:query {
+        "queryId":"events-featured",
+        "query":{
+          "perPage":1,
+          "postType":"post",
+          "order":"desc",
+          "orderBy":"date",
+          "categoryName":"events"
+        },
+        "displayLayout":{"type":"list","columns":1},
+        "className":"mb-4"
+      } -->
+      <div class="wp-block-query mb-4">
+        <!-- wp:post-template -->
+        <article class="featured-post mb-3">
+          <!-- wp:post-featured-image {"sizeSlug":"large","className":"img-fluid mb-2"} /-->
+          <!-- wp:post-title {"isLink":true,"className":"fw-bold h4 mt-2"} /-->
+          <!-- wp:group {"className":"d-flex"} -->
+          <div class="wp-block-group d-flex">
+            <!-- wp:post-author {"showAvatar":true,"className":"text-muted"} /-->
+          </div>
+          <!-- /wp:group -->
+        </article>
+        <!-- /wp:post-template -->
+      </div>
+      <!-- /wp:query -->
+    </div>
+    <!-- /wp:column -->
+    
+    <!-- Right Column: 3 posts (no offset) -->
+    <!-- wp:column {"className":"col-md-4"} -->
+    <div class="wp-block-column col-md-4">
+      <!-- wp:query {
+        "queryId":"events-3",
+        "query":{
+          "perPage":3,
+          "postType":"post",
+          "order":"desc",
+          "orderBy":"date",
+          "categoryName":"events"
+        },
+        "displayLayout":{"type":"list","columns":1},
+        "className":"mb-5"
+      } -->
+      <div class="wp-block-query mb-5">
+        <!-- wp:post-template -->
+        <article class="regular-post pt-2">
+          <!-- wp:post-title {"isLink":true,"className":"fw-bold h5"} /-->
+          <!-- wp:post-author {"showAvatar":false,"className":"text-muted small"} /-->
+        </article>
+        <!-- /wp:post-template -->
+      </div>
+      <!-- /wp:query -->
+    </div>
+    <!-- /wp:column -->
+    
+  </div>
+  <!-- /wp:group -->
+
+  <hr class="my-4 border-top border-2 border-dark"/>
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
